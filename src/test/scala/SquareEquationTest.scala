@@ -18,9 +18,7 @@ class SquareEquationTest extends AnyWordSpecLike with Matchers {
       val roots: List[Double] = SquareEquation.solve(a = 1.0, b = -2.0, c = 1.000000000000001)
       roots should be (1.0 :: 1.0 :: Nil)
     }
-  }
 
-  "square equation" should {
     "throw exception" when {
       "a = 0" in {
         assertThrows[IllegalArgumentException] {
