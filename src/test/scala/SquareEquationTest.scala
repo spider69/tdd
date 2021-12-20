@@ -22,7 +22,7 @@ class SquareEquationTest extends AnyWordSpecLike with Matchers {
     "throw exception" when {
       "a = 0" in {
         assertThrows[IllegalArgumentException] {
-          SquareEquation.solve(a = 0.0, b = 1.0, c = 1.0)
+          SquareEquation.solve(a = 0.000000000000001, b = 1.0, c = 1.0)
         }
       }
 
